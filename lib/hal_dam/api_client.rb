@@ -1,8 +1,8 @@
-module HalDms
+module HalDam
   class ApiClient
     def initialize(vendor_id, vendor_key)
-      uri         = URI.parse('https://haldms.halleonard.com')
-      @adapter    = HalDms::NetHttpAdapter.new(uri)
+      uri         = URI.parse('https://HalDam.halleonard.com')
+      @adapter    = HalDam::NetHttpAdapter.new(uri)
       @vendor_id  = vendor_id
       @vendor_key = vendor_key
     end
@@ -40,7 +40,7 @@ module HalDms
       else
         builder = Builder::XmlMarkup.new(indent: 2)
         builder.instruct!
-        builder.declare! :DOCTYPE, :DAMRequest, :SYSTEM, 'http://haldms.halleonard.com/dam_dtd/DAMRequest.dtd'
+        builder.declare! :DOCTYPE, :DAMRequest, :SYSTEM, 'http://HalDam.halleonard.com/dam_dtd/DAMRequest.dtd'
       end
 
       hash.each do |k, v|

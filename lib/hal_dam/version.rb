@@ -1,3 +1,3 @@
-module HalDms
+module HalDam
   VERSION = '0.1.0'
 end

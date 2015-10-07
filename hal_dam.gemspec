@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'hal_dms/version'
+require 'hal_dam/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'hal_dms'
-  spec.version       = HalDms::VERSION
+  spec.name          = 'hal_dam'
+  spec.version       = HalDam::VERSION
   spec.authors       = ['Tanner Donovan']
   spec.email         = ['tdonovan@sheetmusicplus.com']
 

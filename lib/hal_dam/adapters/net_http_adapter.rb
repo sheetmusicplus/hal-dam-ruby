@@ -1,4 +1,4 @@
-module HalDms
+module HalDam
   class NetHttpAdapter
     def initialize(uri)
       @conn = Net::HTTP.new(uri.host, uri.port)
@@ -13,7 +13,7 @@ module HalDms
       end
 
       req['Content-Type'] = 'text/xml'
-      req['User-Agent']   = 'HalDms Ruby Client'
+      req['User-Agent']   = 'HalDam Ruby Client'
       req.body            = body
 
       resp = @conn.request(req)

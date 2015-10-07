@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-RSpec.describe HalDms::Client do
+RSpec.describe HalDam::Client do
   subject { described_class.new('vendor_id', 'vendor_key') }
 
-  it { is_expected.to be_kind_of(HalDms::ApiClient) }
+  it { is_expected.to be_kind_of(HalDam::ApiClient) }
 
   it 'responds to endpoints' do
     endpoints.each do |ref|
@@ -16,7 +16,7 @@ RSpec.describe HalDms::Client do
     let(:stop_date) { Date.today }
 
     it 'returns a <DAMResponse/>' do
-      stub_request(:post, 'https://haldms.halleonard.com/dam').to_return(body: '<DAMResponse/>')
+      stub_request(:post, 'https://HalDam.halleonard.com/dam').to_return(body: '<DAMResponse/>')
       subject.metadata(start_date, stop_date) do |resp|
         expect(resp).to eq('<DAMResponse/>')
       end

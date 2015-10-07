@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe HalDms do
+describe HalDam do
   it 'has a version number' do
-    expect(HalDms::VERSION).not_to be nil
+    expect(HalDam::VERSION).not_to be nil
   end
 end

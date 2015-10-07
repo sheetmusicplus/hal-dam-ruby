@@ -1,6 +1,6 @@
-# HalDms
+# HalDam
 
-This is an unofficial client library for the
+This is an unofficial Ruby client library for the
 [Hal Leonard Digital Asset Management](https://haldms.halleonard.com/vendoradmin/)
 system.
 
@@ -9,7 +9,7 @@ system.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'hal_dms'
+gem 'hal_dam'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install hal_dms
+    $ gem install hal_dam
 
 ## Usage
 
