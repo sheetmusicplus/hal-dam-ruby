@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Tanner Donovan']
   spec.email         = ['tdonovan@sheetmusicplus.com']
 
-  spec.summary       = 'Client library for Hal Leonard DAM System'
-  spec.homepage      = 'https://github.com/sheetmusicplus/hal-dms-ruby'
+  spec.summary       = 'Client library for the Hal Leonard DAM System'
+  spec.homepage      = 'https://github.com/sheetmusicplus/hal-dam-ruby'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
